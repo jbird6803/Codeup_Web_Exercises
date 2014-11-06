@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://codeup.dev/jquery_faq.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>JQUERY FAQs</title>
+<style>
+body {
+	background-image: url('/img/BigBend.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 1000px 800px;
+	color: white;
+}
+	dl {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    color: white;
+}
+	.invisible {
+	display: none;
+}
+	dt {
+		font-style: bold;
+		font-size: 25px;
+		color: white;
+	}
+	dd {
+		font-size: 18px;
+		border-width: 1px;
+		border-color: black;
+		border-style: dotted;
+		color: white;
+		background-color: black;
+	}
+	a {
+		color: white;
+	}
+	h1 {
+		font-size: 56px;
+		color: black;
+		text-decoration: underline;
+		position: absolute;
+		top: 10px;
+		right: 180px;
+
+
+	}
+	h2 {
+		font-size: 56px;
+		color: black;
+		text-decoration: underline;
+		text-align: right;
+		position: relative;
+		top:50px;
+		right: 50px;
+	}
+
+</style>
+<script src="./JQUERY FAQs_files/jquery-1.11.0.min.js"></script>
+<script src="./JQUERY FAQs_files/moment.js"></script>
+<script>
+	$('document').ready(function() {
+		$('#dd-invisible').click(function(event) {
+			event.preventDefault();
+			$('dd').toggleClass('invisible');
+		});
+		$('dd').hover(
+			function() {
+				$(this).css('font-size', '28px');
+			},
+			function() {
+				$(this).css('font-size', '18px');
+			}
+	);
+	});
+</script>
+
+<style type="text/css"></style></head>
+<body>
+	<div>
+	<h1>BIG BEND</h1>
+	</div>
+	<div>
+	<h2>NATIONAL PARK</h2>
+	</div>
+	<h3>FAQs About Big Bend National Park</h3>
+	<a href="http://codeup.dev/jquery_faq.html#" id="dd-invisible">Toggle Answers.</a>
+		<dl>
+			<dt>How Big is Big Bend?</dt>
+				<dd class="invisible" style="font-size: 18px;">At 801,163 acres, Big Bend is the 8th largest national park in the lower 48 states, and the 15th largest in the U.S.</dd>
+
+			<dt>Is fishing allowed?</dt>
+				<dd class="invisible" style="font-size: 18px;">Fishing is allowed in the Rio Grande with a free permit issued from a visitor center.</dd>
+			<dt>Are pets allowed?</dt>
+				<dd class="invisible" style="font-size: 18px;">Pets are not allowed on trails or in the backcountry for the protection of the park, wildlife, hikers, and your pet. Pets are allowed anywhere vehicles can go, such as roads and primitive campsites, but pets must be on a leash and may not be left unattended.</dd>			
+			<dt>Are fires allowed?</dt>
+				<dd class="invisible" style="font-size: 18px;">Ground fires and wood fires are prohibited throughout Big Bend National Park. Charcoal is allowed in grills in campgrounds. You may have a fire in a fire pan while on a river trip, or use a containerized fuel stove for backpacking.</dd>
+			<dt>What is the park's annual visitation?</dt>
+				<dd class="invisible" style="font-size: 18px;">Annual visitation ranges between 300,000 and 350,000 visitors per year.</dd>			
+			<dt>How much does it cost to enter the park?</dt>
+				<dd class="invisible" style="font-size: 18px;">A $20 per vehicle entrance fee is required, or a $10 individual fee, unless you have a park pass. Fees and passes can be purchased at entrance stations or visitor centers. Commercial permits are required for businesses. and a special use permit may be required for some activities.</dd>
+			<dt>Is it possible to cross into Mexico?</dt>
+				<dd class="invisible">Yes, visitors can legally cross into Mexico through the Boquillas Crossing Port of Entry which opened in April 2013. This Class B port of entry is open from 9;00am-6:00pm Wednesday-Sunday.</dd>
+			<dt>When do wildflowers bloom?</dt>
+				<dd class="invisible">Many desert plants bloom between late February and late April, while others bloom in response to summer rains of July and August. Occasionally, there is also a fall bloom if the right conditions are present through the year.</dd>
+			<dt>When is it best to see wildlife?</dt>
+				<dd class="invisible">Much of the wildlife in the park is active at night; dusk and dawn are great times for wildlife viewing. Water sources make Daniels' Ranch, Dugout Wells, Window Trail, Sam Nail Ranch, and the beaver pond on the Rio Grande nature Trail excellent places to look for animals and watch for birds. Remember, feeding wildlife is prohibited.</dd>
+			<dt>Do cell phones work?</dt>
+				<dd class="invisible">Coverage in the park is limited and not always dependable. Pay phones can be found in some developed areas.</dd>
+		</dl>
+	
+
+
+</body></html>

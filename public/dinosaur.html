@@ -1,0 +1,103 @@
+<html>
+<head>
+    <title>A Park Apart</title>
+</head>
+<body>
+ 
+    <h1>300 Million Years of Tradition</h1>
+ 
+</body>
+<script type="text/javascript">
+    // You've just been hired as a junior web developer at a park.  A park unlike any other.  And in this park, we have a particular kind of attraction - one the world has not seen in some time...
+ 
+    // Your new boss, Nedry, has tasked you with some JSON related work.
+ 
+    // Create an object called Dinosaur.  
+ 
+    // This object should have the following properties, with a relevant data types:
+    /*      -- species, genus, nickname, descriptive adjective reflective of that dinosaur's personality.
+            -- method 'trample' -> which when called, issues an ALERT that says "Watch Out!  <nickname> is on the loose!".  If the dinosaur is a predator, it should say "Rawrrr!  <nickname> is on a rampage!"
+            -- an array of favorite foods.
+            -- age
+    */
+
+    var dinosaurs = [
+	    {	
+	    	'nickname': 'Dopey',
+    		'species': 'Ceratosaurus',
+    		'genus': 'nasicornis',
+    		'descriptive': 'wistful',
+    		'foods': ['flying squirrels', 'chicken'],
+    		'age': 33,
+	    	'trample': true,
+	    	'meatatarian': true
+	    },
+	    {
+	    	'nickname': 'Bitey',
+    		'species': 'Tyrannosaurus',
+    		'genus': 'rex',
+    		'descriptive': 'solitary',
+    		'foods': ['carcasses', 'mammals', 'other dinosaurs'],
+    		'age': 27,
+    		'trample': true,
+    		'meatatarian': true
+	    },
+	    {
+	    	'nickname': 'Buttons',
+    		'species': 'Stegosaurus',
+    		'genus': 'armatus',
+    		'descriptive': 'family-oriented',
+    		'foods': ['grass', 'leaves'],
+    		'age': 38,
+	    	'trample': true
+	    },
+    ];
+
+    var count;
+
+    dinosaurs.forEach(function(element, index, array){
+    	count = index + 1;
+    	console.log('Dinosaur ' + (index+1));
+    	console.log(element.nickname);
+    	console.log(element.nickname + ' ' + element.descriptive + ' ' + element.species + ' ' + 'is ' + element.age + ' years old.')
+    	var food = element.foods.join(', ');
+    	console.log('Their favorite foods are: ' + food);
+    	
+    	if(element.trample) {
+    		alert('Watch Out ' + element.nickname + ' is on the loose!');
+    	}
+    	
+    	if(element.meatatarian){
+    		alert('He gonna eat you');
+    	}
+    });
+
+
+
+/*
+    Dinosaur 1: 
+    Dopey, a wistful Ceratosaurus nasicornis is 33 years old. 
+    Their favorite foods are: flying squirrels and chicken.
+    *alert method called*
+    
+    Dinosaur 2: 
+    Bitey, a solitary Tyrannosaurus rex is 27 years old. 
+    Their favorite foods are: carcasses, mammals and other dinosaurs.
+    *alert method called*
+ 
+    
+    Dinosaur 3:
+    Buttons, a family-oriented Stegosaurus armatus is 38 years old. 
+    Their favorite foods are: grass and leaves. 
+    *alert method called*
+ 
+    
+ 
+    // At the end of this assignment, you should have ATLEAST three dinosaurs.  Try putting them all in an array, and looping through them!
+ 
+    // Output the dinosaurs in alphabetical order, according to nickname.
+ 
+    // Remember the keyword: "this".
+ 
+</script>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQUERY FAQs</title>
+<style>
+body {
+	background-image: url('/img/BigBend.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
+	margin: 50px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+dl {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    color: white;
+}
+/*.invisible {
+	display: none;
+}*/
+dt {
+	font-style: bold;
+	font-size: 25px;
+	color: white;
+}
+dd {
+	font-size: 25px;
+	color: white;
+
+}
+a {
+	color: white;
+}
+h1 {
+	font-size: 46px;
+	color: white;
+	text-decoration: underline;
+	text-align: right;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+</style>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="/js/moment.js"></script>
+<script>
+	$('document').ready(function() {
+		
+		$('#dd-invisible').click(function() {
+		
+			$('dd').fadeToggle(2000);
+		});
+
+        $('ul').each(function() {
+
+        	$(this).children().first().css('font-weight', 'bold');
+        });
+        
+        $('h2').click(function() {
+
+        	$(this).next('ul').fadeToggle(2000);
+        });
+
+        $('h2').css('cursor', 'pointer');
+        $('dt').css('cursor', 'pointer');
+
+        $('dd').hide();
+
+        $('dt').click(function() {
+        	$(this).next('dd').fadeToggle(2000);
+        });
+       
+	});
+</script>
+
+</head>
+<body>
+	<div >
+	<h1>BIG BEND NATIONAL PARK</h1>
+	</div>
+	<h3>FAQs About Big Bend National Park</h3>
+	<a href="#" id="dd-invisible">Toggle Answers.</a>
+		<dl>
+			<dt>How Big is Big Bend?</dt>
+				<dd>At 801,163 acres, Big Bend is the 8th largest national park in the lower 48 states, and the 15th largest in the U.S.</dd>
+
+			<dt>Is fishing allowed?</dt>
+				<dd>Fishing is allowed in the Rio Grande with a free permit issued from a visitor center.</dd>
+			<dt>Are pets allowed?</dt>
+				<dd>Pets are not allowed on trails or in the backcountry for the protection of the park, wildlife, hikers, and your pet. Pets are allowed anywhere vehicles can go, such as roads and primitive campsites, but pets must be on a leash and may not be left unattended.</dd>			
+			<dt>Are fires allowed?</dt>
+				<dd>Ground fires and wood fires are prohibited throughout Big Bend National Park. Charcoal is allowed in grills in campgrounds. You may have a fire in a fire pan while on a river trip, or use a containerized fuel stove for backpacking.</dd>
+			<dt>What is the park's annual visitation?</dt>
+				<dd>Annual visitation ranges between 300,000 and 350,000 visitors per year.</dd>			
+			<dt>How much does it cost to enter the park?</dt>
+				<dd>A $20 per vehicle entrance fee is required, or a $10 individual fee, unless you have a park pass. Fees and passes can be purchased at entrance stations or visitor centers. Commercial permits are required for businesses. and a special use permit may be required for some activities.</dd>
+			<dt>Is it possible to cross into Mexico?</dt>
+				<dd>Yes, visitors can legally cross into Mexico through the Boquillas Crossing Port of Entry which opened in April 2013. This Class B port of entry is open from 9;00am-6:00pm Wednesday-Sunday.</dd>
+			<dt>When do wildflowers bloom?</dt>
+				<dd>Many desert plants bloom between late February and late April, while others bloom in response to summer rains of July and August. Occasionally, there is also a fall bloom if the right conditions are present through the year.</dd>
+			<dt>When is it best to see wildlife?</dt>
+				<dd>Much of the wildlife in the park is active at night; dusk and dawn are great times for wildlife viewing. Water sources make Daniels' Ranch, Dugout Wells, Window Trail, Sam Nail Ranch, and the beaver pond on the Rio Grande nature Trail excellent places to look for animals and watch for birds. Remember, feeding wildlife is prohibited.</dd>
+			<dt>Do cell phones work?</dt>
+				<dd>Coverage in the park is limited and not always dependable. Pay phones can be found in some developed areas.</dd>
+		</dl>
+	</div>
+	<div>
+		<h2>Trail 1</h2>
+			<ul>
+				<li>blah</li>
+				<li>blah</li>
+				<li>blah</li>
+				<li>blah</li>
+			</ul>
+		<h2>Trail 2</h2>
+			<ul>
+				<li>blah</li>
+				<li>blah</li>
+				<li>blah</li>
+				<li>blah</li>
+			</ul>
+		<h2>Trail 3</h2>
+			<ul>
+				<li>blah</li>
+				<li>blah</li>
+				<li>blah</li>
+				<li>blah</li>
+			</ul>
+
+	</div>
+
+</body>
+</html>

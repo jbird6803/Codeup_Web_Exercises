@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Javascript Homework</title>
+</head>
+<body>
+ <script>
+ 
+var random = Math.floor((Math.random()*100)+1);
+console.log(random);
+
+var confirmed = confirm('Do you want to play a game?');
+if (confirmed == false) {
+	alert('Bye Felicia');
+	exit();
+} 
+
+var response = prompt("I'm thinking of a number 1 - 100. What number am I thinking?");
+
+while (response != random) {
+	if (response > random) {
+		var response = prompt("Guess Lower");
+	} else if (response < random) {
+		var response = prompt("Guess Higher");
+	} else {
+		var response = prompt("Hey genius, why don't you try a number this time");
+	}
+} 
+
+alert("Good job you guessed a number. You think you're smart?");
+
+</script>
+</body>
+
+</html>

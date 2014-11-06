@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Positioning Exercise</title>
+  <style>
+  .container {
+    width: 380px;
+    height: 240px;
+  }
+  #red {
+    background-color:#FF0000;
+  }
+  #orange {
+    background-color:#FF9900; 
+  }
+  #yellow {
+    background-color:#FFFF00;
+    color: black;
+  }
+  #green {
+    background-color:#009900;
+  }
+  #blue {
+    background-color:#0000FF;
+  }
+  #pink {
+    background-color:#FF99FF;
+  }
+  .boxes {
+    border: 1px solid #000;
+    height: 50px;
+    width: 50px;
+
+    font-weight: bold;
+    color: white;
+    
+    margin: 25px;
+    padding: 10px;
+    
+    position:relative;
+    float: left;
+  }
+  h1 {
+    color: purple;
+    text-decoration: underline;
+  }
+  p {
+    margin: 0px;
+  }
+  .boxes>img {
+    position: relative;
+    top: -100px;
+    left: 40px;
+  }
+  #ribbon {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  </style>
+</head>
+<body id="#body">
+  
+  <a href="http://codeup.com"><img id=ribbon src="/img/ribbon.png"></img></a>
+
+  <h1><a href="http://www.wikipedia.org/"> Visible Spectrum Wavelengths</a></h1>
+  <div class="container">
+
+
+      <div class="boxes" id="red">
+          620-750 nm
+          <img src="/img/codeup-arrow.png"></img>
+      </div>
+      <div class="boxes" id="orange">
+          590-620 nm
+          <img src="/img/codeup-arrow.png"></img>
+      </div>
+      <div class="boxes" id="yellow">
+          570-590 nm
+          <img src="/img/codeup-arrow.png"></img>
+      </div>
+      <div class="boxes" id="green">
+          495-570 nm
+          <img src="/img/codeup-arrow.png"></img>
+      </div>  
+      <div class="boxes" id="blue">
+          450-495 nm
+          <img src="/img/codeup-arrow.png"></img>
+      </div>
+      <div class="boxes" id="pink">
+          380-450 nm
+          <img src="/img/codeup-arrow.png"></img>
+      </div>
+    </div>
+
+</body>
+</html>
+
